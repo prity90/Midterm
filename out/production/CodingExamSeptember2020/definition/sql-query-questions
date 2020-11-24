@@ -1,0 +1,46 @@
+This file contains SQL questions.
+Please read the questions and answer.
+
+What is Database?
+A.
+
+What is DBMS?
+What is the difference between SQL and MySQL?
+What is RDBMS? How is it different from DBMS?
+What are Tables and Fields?
+What is SQL?
+What are Constraints in SQL?
+What is a Primary Key?
+What is a Foreign Key?
+What is Normalization?
+What is Denormalization?
+
+You have 2 tables given below.
+
+Order Table:
+
+OrderID	 CustomerID	  OrderDate
+20508	    1	      2014-09-10
+30407	    2	      2016-09-19
+40250	    10	      2020-03-20
+
+Customer Table:
+
+CustomerID	   CustomerName	    CustomerPhone	     Country
+1              John Dave	    1-718-203-9087	     Australia
+2	           Brian Gary	    1-646-789-3489	     USA
+3	           Chris Brown	    1-212-342-7843       Canada
+
+Please do the following on above Order table and Customer table:
+
+Inner Join:
+Left Join:
+Right Join:
+Full Join:
+
+On Customer Table, please Insert one row.
+
+On Order Table, please Update one row.
+
+
+

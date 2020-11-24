@@ -1,0 +1,222 @@
+Please answer the below core-java Questions:
+
+What is programing language?
+A. Programing language is a set of command or syntax used to creat a software program.
+
+What jdk contains or composed of and define each components?
+A.
+
+What is IDE?
+A. IDE is an Integrated Development Environment.
+
+What are the IDEs available in the market to support java?
+A.Eclipse,Intellij, BlueJ, NetBeans,JCreator.
+
+
+Explain the entire java life cycle.
+...
+
+what is class?
+A class is a blueprint for creating object.
+
+What is object?
+...
+What is the entry point of an application?
+It is an access point to an application.
+
+Why main is static?
+Main is always static because compiler can call without the creation of a new object.
+
+Which class is the superclass of all classes?
+Object class.
+
+What is difference between path and classpath variables?
+PATH. The path environment variable is used to specify the set of directories which contains executional programs.
+CLASSPATH. The class path environment variable is used to specify the location of the classes and packages.
+
+What is the difference between an Interface and Abstract class?
+INTERFACE..Interface can have only abstract methods.
+ABSTRACT..Abstract class can have abstract and non-abstract methods.
+
+Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+No. we can implement Interface and Abstract class.
+
+what is Access Specifier?
+Access Specifier regulate access to classes, fields and methods in Java.
+
+What is OOP ? Define each feature of java OOP.
+Object Oriented Programming.
+1.Abstraction.
+2.Encapsulation.
+3.Inheritance.
+4.Polymorphism.
+
+What is Java Package and which package is imported by default?
+Java package is a namespace that organize a set of classes. Java.lang
+
+What is API? Name list of API that you have used so far.
+API stands for application programming interface.
+
+Does java support multiple inheritance, explain why or why not?
+Yes. so it do have the ability of a class to implement more than one interface.
+
+What is method overloading and when it happens?
+Method Overloading is a feature that allows a class to have more than one method having the same name, if their argument lists are different.
+
+Explain exceptions in java and how to handle it.
+Exception is an event, which occurs during the execution of a program that disrupts the normal flow of the program's instructions.
+we can handle with try,catch and finally block.
+
+What is static keyword in java? How it has been used in variables and methods ?
+static is a non-access modifier in Java.
+Static methods can be public or private.
+The static keyword is placed right after the public/private modifier and right before the type of variables and methods in their declarations.
+
+What is final and how it has been used variables and methods?
+The final keyword in java is used to restrict the user.
+public final class ....{....}
+
+What is final, finally and finalize?
+1.final is a keyword.
+2.finally is a block.
+3.finalize is a methods.
+
+What is a constructor ?
+Constructor is a special method that is used to initialize objects.
+
+Can we have multiple constructors in a class?
+Yes.
+
+If we don't have a constructor declared, what is called during the object creation?
+.....
+
+What is "this" keyword in java ?
+It refer to current object.
+
+What is "super" keyword in java? How many possible way can you use?
+The super keyword in Java is a reference variable which is used to refer immediate parent class object.
+1.variable.
+2.methods.
+3.constructor.
+
+What is JVM stand for ?
+Java Virtual Machine.
+
+Is JVM platform independent?
+Yes.
+
+What version of java are you using?
+15.
+
+What is JAR stand for ?
+Java ARchive.
+
+What is the difference between JDK and JVM?
+1.JDK is a software development kit to develop applications in Java.
+2.JVM executes Java byte code and provides an environment for executing it.
+
+What is the difference between JVM and JRE?
+1.JVM executes Java byte code and provides an environment for executing it.
+2.It is a software bundle which provides Java class libraries with necessary components to run Java code.
+
+What is compile time and run time?
+1.Compile time is when the program is compiled
+2.Runtime is when it executes
+
+What is heap?
+The heap is an area of dynamically-allocated memory that is managed automatically by the operating system or the memory manager library.
+
+How java manage it's memory?
+Java manage it memory with heap and stack.
+
+What is the difference between String, StringBuffer and StringBuilder?
+1.String represent character.
+2.StringBuffer operation are thread-safe and synchronized.
+3.StringBuilder perform faster than StringBuffer.
+
+What is Singleton class?
+It can have only one object.
+
+What is Serialization and Deserialization?
+1.Serialization is a mechanism of converting the state of an object into a byte stream.
+2.Deserialization is the reverse process where the byte stream is used to recreate the actual Java object in memory.
+
+when to use transient variable in java?
+To avoid serialization.
+
+Difference between while and do..while loop?
+1.In while loop condition is evaluated first.
+2.In do.while loop statement in do while get executed first.
+
+What is Enum?
+Enum is a spacial class in that represent a group of constants.
+
+What is Iterator?
+Iterator is used to iterate elements one-by-one from a List implemented object.
+
+Which one will take more memory, an int or Integer?
+Integer.
+
+Why is String Immutable in Java?
+The string is Immutable in Java because String objects are cached in the String pool.
+
+What is constructor chaining in Java?
+call one constructor from another constructor.
+
+The difference between Serial and Parallel Garbage Collector?
+1.Serial garbage collector is default.
+2.Parallel garbage collector is Multiple.
+
+What is JIT stands for?
+Just-In-Time.
+
+Explain Java Heap space and Garbage collection?
+1.The Java heap is the area of memory used to store objects instantiated by applications running on the JVM.
+2.Java garbage collection is the process by which Java programs perform automatic memory management.
+
+Can you guarantee the garbage collection process?
+No.
+
+What is the difference between stack and heap in Java?
+1.Heap memory is used by all the parts of the application.
+2.stack memory is used only by one thread of execution.
+
+What is reflection in java and why is it useful?
+...
+what is multithreading in java?
+Multithreading is a Java feature that allows concurrent execution of two or more parts of a program for maximum utilization of CPU.
+
+What is the use of synchronization in Java?
+To handle two or more threads at a same time.
+
+What is Framework?
+It is a body of pre-write code.
+
+
+What are the testing Framework available in java?
+1.jUnit
+2.TestNG
+3.JBehave
+4.Serenity
+
+Difference between jUnit and testNG?
+1.JUnit does not support running parallel test simultaneously.
+2.It processes Unit tests with passing parameters into the test methods.
+
+What are the dependencies for this project?
+........
+what is dependency injection in java?
+Dependency injection is a concept in which objects get other required objects from outside
+
+What is static binding and dynamic binding?
+1.When type of the object is determined at compiled time is called Static binding.
+2.When compiler is not able to resolve the binding at compile time is known as Dynamic or late Binding.
+
+
+
+
+
+
+
+
+
