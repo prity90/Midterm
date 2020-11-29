@@ -5,4 +5,8 @@ public interface Laptop {
     public void ramSize(int memorySize);
 
     public void monitorSize(int screenSize);
+
+    void ramSize();
+
+    void monitorSize();
 }

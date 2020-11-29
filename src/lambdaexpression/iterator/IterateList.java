@@ -14,10 +14,11 @@ public class IterateList {
 
         //Please implement Anonymous class to iterate through
         System.out.println("Using Anonymous class");
-
+        electronicsList.forEach(Electronics::countWordLength);
 
         //Please implement lambda expression to iterate through electronicsList
         System.out.println("Lambda Expression");
+
 
 
         //Please implement lambda Method Reference to iterate through electronicsList
@@ -29,6 +30,7 @@ public class IterateList {
 
         //Please implement stream iteration through electronicsList
         System.out.println("iterate using Stream for each loop");
+         electronicsList.stream().filter((items ->items.startsWith("L"))).forEach(items ->System.out.println(items));
 
     }
 
