@@ -62,7 +62,12 @@ public class CsvReader {
                 System.out.println(student.getFirstName() + " " + student.getLastName() + " " + student.getNumberOfExercisesSolved());
             }
         }
-
+        int total = roster.size(), all = 0;
+        for (Trainee n: roster) {
+            all = all + n.getNumberOfExercisesSolved();
+        }
+        System.out.println();
+        System.out.println("Average score: "+all/total);
     }
 
 }

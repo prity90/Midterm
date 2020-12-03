@@ -1,5 +1,7 @@
 package datastructure;
 
+import com.google.gson.internal.LinkedHashTreeMap;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -13,7 +15,12 @@ public class UseMap {
 		 * Use For Each loop and while loop with Iterator to retrieve data.
 		 *
 		 */
-		Map<String, List<String>> ls= new HashMap<>();
+		Map<String,String> map= new HashMap<>();
+		map.put ("USA", "California");
+		map.put ("CANADA", "Toronto");
+
+		System.out.println(map.get("USA"));
+		System.out.println(map.get("CANADA"));
 	}
 
 }

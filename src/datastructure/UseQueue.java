@@ -36,7 +36,7 @@ public class UseQueue {
 		System.out.print("\nThe Queue items using iterator: ");
 		Iterator<String> iter = st.iterator();
 		while (iter.hasNext()) {
-			System.out.print(iter.next() + ", ");
+			System.out.print(((Iterator<?>) iter).next() + ", ");
 
 
 		}

@@ -1,9 +1,6 @@
 package datastructure;
 
-import java.util.Collection;
-import java.util.Collections;
 import java.util.HashMap;
-import java.util.Map;
 
 
 public class CollectionView {
@@ -20,7 +17,7 @@ public class CollectionView {
                 map.put(5, "San Jose");
                 map.put(6, "Seattle");
 
-                for (Map.Entry<Integer, String> city : map.entrySet()) {
+                for (HashMap.Entry<Integer, String> city : map.entrySet()) {
                         System.out.println("Key: " + city.getKey() + " <----> Value: " + city.getValue());
 
                 }
