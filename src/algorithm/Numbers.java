@@ -3,7 +3,7 @@ package algorithm;
 import databases.ConnectToSqlDB;
 
 import java.util.*;
-import java.util.List;
+import java.util.Random;
 
 /*
  *Created by mrahman on 04/02/2018.
@@ -21,28 +21,49 @@ public class Numbers {
 	 */
 
 	public static void main(String[] args) throws Exception {
+		int [] num = new int[10];
+		storeRandomNumbers(num);
+		ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
+		//Selection Sort
+		Sort algo = new Sort();
+		algo.selectionSort(num);
+		long selectionSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of "+ num.length + " numbers in Selection Sort take: " + selectionSortExecutionTime + " milli sec");
+		connectToSqlDB.insertDataFromArrayToSqlTable(num, "selection_sort", "SortingNumbers");
+		List<String> selectionSortNumbers = connectToSqlDB.readDataBase("selection_sort", "SortingNumbers");
+		printValue(selectionSortNumbers);
+		int n = num.length;
+		randomize (num, n);
+		//Insertion Sort
+		algo.insertionSort(num);
+		long insertionSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + insertionSortExecutionTime + " milli sec");
+		connectToSqlDB.insertDataFromArrayToSqlTable(num, "insertion_sort", "SortingNumbers");
+		List<String> insertionSortNumbers = connectToSqlDB.readDataBase("insertion_sort", "SortingNumbers");
+		printValue(insertionSortNumbers);
+		//By following above, Continue for rest of the Sorting Algorithm....
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		//Come to conclusion about which Sorting Algo is better in given data set of 1000000.
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-	//Come to conclusion about which Sorting Algo is better in given data set of 1000000.
-
-
-
 	public static void storeRandomNumbers(int [] num){
-		Random rand=new Random();
-		for(int i=0;i<num.length;i++){
-			num[i]=rand.nextInt(1000000);
+		Random rand = new Random();
+		for(int i=0; i<num.length; i++){
+			num[i] = rand.nextInt(100);
 		}
 	}
 
@@ -58,9 +79,11 @@ public class Numbers {
 			arr[j] = temp;
 		}
 	}
-	public static void printValue(List<String> array) {
-		for (String st : array) {
+	public static void printValue(List<String> array){
+		for(String st:array){
 			System.out.println(st);
+
+
 		}
 	}
 }
